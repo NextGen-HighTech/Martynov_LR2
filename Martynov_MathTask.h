@@ -11,6 +11,7 @@ bool UserInput(string input) {
     if (input.empty()) return false;
     try {
         int number = stoi(input);
+        return number >= 0;
     }
     catch (...) {
         return false;
